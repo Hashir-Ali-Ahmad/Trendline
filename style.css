@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,20 +7,22 @@
 html, body{
 height: 100%;
 width: 100%;
+font-family: "Montserrat", sans-serif;
+font-weight: 100;
+cursor: cell;
 }
 .main{
     width: 100%;
     height: 100%;
-    background-color: bisque;
 }
 nav{
-    height: 10%;
+    height: 8%;
     width: 100%;
     /* background: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
+    padding: 0px 50px;
 }
 nav .left-nav{
     display: flex;
@@ -32,18 +35,85 @@ nav .left-nav{
 }
 .right-nav{
     display: flex;
-    /* justify-content: center; */
     gap: 40px;
+}
+.right-nav h4{
+    font-weight: 500;
+}
+.right-nav h4 i{
+    font-size: 20px;
 }
 .right-nav h4 span{
     color: rgb(171, 157, 157);
     margin-left: 20px;
 }
 .nav2{
-    height: 10%;
-    background-color: aqua;
+    height: 8%;
     display: flex;
     align-items: center;
-    gap: 70px;
-    padding: 0px 40px;
+    gap: 50px;
+    padding: 0px 50px;
+}
+.nav2 h3{
+    font-style: 18px;
+    font-weight: 00;
+    text-transform: uppercase;
+}
+.content{
+    height: calc(100% - 16%);
+    width: 100%;
+}
+.text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 6px;
+}
+.text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    position: relative;
+}
+.elem h1{
+    font-size: 5.5vmax;
+    font-weight: 300;
+}
+.elem .up-txt{
+position: absolute;
+top: 15%;
+left: 10%;
+display: flex;
+width: 80%;
+}
+.elem .up-txt h4{
+    padding:6px;
+    margin-left: 50px;
+}
+.content .image-content{
+    height: 60%;
+    width: 100%;
+    background: lightsalmon;
+    display: flex;
+    overflow-x: auto;
+}
+.image-content img{
+    flex-shrink: 0;
+    object-fit: cover;
+    width: 100%;
+}
+.image-content::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
 }
