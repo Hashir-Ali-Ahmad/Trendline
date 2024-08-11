@@ -105,11 +105,12 @@ nav .left-nav {
 .content .image-content {
   height: 60%;
   width: 100%;
-  background: lightsalmon;
   display: flex;
   overflow-x: auto;
 }
 .image-content img {
+  transition: all linear 2s;
+  animation: scroll 5s ease-in-out 3s infinite alternate;
   flex-shrink: 0;
   object-fit: cover;
   width: 100%;
@@ -117,4 +118,12 @@ nav .left-nav {
 .image-content::-webkit-scrollbar {
   display: none;
   scroll-behavior: smooth;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
 }
