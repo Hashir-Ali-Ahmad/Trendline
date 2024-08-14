@@ -218,23 +218,19 @@ nav .nav-icon{
   }
   .elem h1 {
     font-size: 5vmax;
+    padding-left: 20px;
   }
   .elem .up-txt {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    display: flex;
-    width: 80%;
+    top: 20%;
+    left: 12%;
+  }
+
+  .elem .up-txt h2{
+    font-size: large;
   }
   .elem .up-txt h4 {
-    padding: 6px;
-    margin-left: 50px;
-  }
-  .content .image-content {
-    height: 60%;
-    width: 100%;
-    display: flex;
-    /* overflow-x: auto; */
+    font-size: small;
+    margin-left: 15px;
   }
 
 }
