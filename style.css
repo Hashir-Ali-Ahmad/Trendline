@@ -48,6 +48,9 @@ nav .left-nav {
   color: rgb(171, 157, 157);
   margin-left: 20px;
 }
+nav .nav-icon{
+  display: none;
+}
 .nav2 {
   height: 8%;
   display: flex;
@@ -110,7 +113,7 @@ nav .left-nav {
   overflow-x: auto;
 }
 .image-content img {
-    animation: scroll 5s ease-in-out 3s infinite alternate;
+  animation: scroll 3s linear 3s infinite;
   transition: all linear 2s;
   flex-shrink: 0;
   object-fit: cover;
@@ -125,6 +128,113 @@ nav .left-nav {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
+}
+
+/* ============================================== LAPTOP */
+
+@media (max-width:1100px) {
+
+  .right-nav h4 {
+    font-size: 16px;
+  }
+  .nav2 {
+    gap: 30px;
+  }
+  .nav2 h3 {
+    font-size: 12px;
+  }
+  
+}
+
+/* ============================================== TAB */
+
+@media (max-width:800px) {
+
+  .right-nav {
+    gap: 20px;
+  }
+  .nav2 {
+    gap: 20px;
+  }
+  .nav2 h3 {
+    font-size: 12px;
+  }
+}
+
+/* ============================================== MOBILE */
+
+@media (max-width:500px) {
+  nav {
+    height: 12%;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  nav .nav-icon{
+    display: block;
+  }
+  nav .left-nav {
+    display: flex;
+  }
+  .left-nav .circle {
+    height: 20px;
+    width: 20px;
+    background: #000;
+    border-radius: 50%;
+  }
+  .right-nav {
+    display: none;
+    gap: 40px;
+  }
+  .right-nav h4 {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .right-nav h4 i {
+    font-size: 20px;
+  }
+  .right-nav h4 span {
+    color: rgb(171, 157, 157);
+    margin-left: 20px;
+  }
+  .nav2 {
+    height: 8%;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0px 10px;
+  }
+  .nav2 h3 {
+    font-size: 9px;
+    
+  }
+  .elem {
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .elem h1 {
+    font-size: 5vmax;
+  }
+  .elem .up-txt {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    display: flex;
+    width: 80%;
+  }
+  .elem .up-txt h4 {
+    padding: 6px;
+    margin-left: 50px;
+  }
+  .content .image-content {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    /* overflow-x: auto; */
+  }
+
 }
